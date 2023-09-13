@@ -39,6 +39,9 @@ Then you can view the options and results in the terminal.
 ## Github Repository
 https://github.com/atan39/Employee-Tracker
 
+## Video Example
+https://watch.screencastify.com/v/jhUKk1RcoGJA2jClP3Uw
+
 ## Credits
 
 UofM bootcamp code, tutors, and TAs

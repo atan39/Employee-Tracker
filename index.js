@@ -37,7 +37,7 @@ const rolePrompt = [
   },
   {
     type: "input",
-    name: "departmentId",
+    name: "department_id",
     message: "What is the department ID?",
   },
 ];
@@ -184,7 +184,7 @@ function addDepartment() {
 
   inquirer.prompt(departmentPrompt).then((answers) => {
 
-    const sql = "INSERT INTO * departments (name) VALUES (?)";
+    const sql = "INSERT INTO departments (name) VALUES (?)";
     db.query(sql, [answers.department], (err, results) => {
       if (err) {
         console.log("error", err);
@@ -201,13 +201,13 @@ function addRole() {
 
   inquirer.prompt(rolePrompt)
   .then((answers) => {
-    const sql = 'INSERT INTO * roles (title, salary, department_id) VALUES (?, ?, ?)';
+    const sql = 'INSERT INTO roles (title, salary, department_id) VALUES (?, ?, ?)';
     db.query(
       sql,
       [
         answers.title,
         answers.salary,
-        answers.departmentId,
+        answers.department_id,
       ],
       (err, results) => {
         if (err) {
